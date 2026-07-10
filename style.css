@@ -19,13 +19,13 @@ header{
     background:rgba(0,0,0,0.15);
     backdrop-filter:blur(10px);
     -webkit-backdrop-filter:blur(10px);
-    padding:19px 0;
+    padding:18px 0;
     position:fixed;
     top:0;
     left:0;
     width:100%;
     z-index:1000;
-  
+    transition:all .3s ease;
 }
 header .container{
     display:flex;
@@ -242,19 +242,6 @@ footer{
     .hero p{
         font-size:18px;
     }
-    header{
-    background: transparent !important;
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
-}
-
-.hero{
-    padding-top:90px;
-}
-
-.logo{
-    width:120px;
-}
 }
 section{
     scroll-margin-top:140px;
@@ -458,92 +445,4 @@ nav a:hover::after{
 
 .card-servicio:hover .card-overlay h3{
     transform:translateY(-5px);
-}
-/* ===========================
-   RESPONSIVE - CELULARES
-=========================== */
-@media (max-width: 768px) {
-
-    .container{
-        width:95%;
-    }
-
-    header .container{
-        flex-direction:column;
-        gap:15px;
-    }
-
-    .logo{
-        width:180px;
-    }
-
-    nav{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:10px;
-    }
-
-    nav a{
-        margin:0;
-        font-size:16px;
-    }
-
-    .hero{
-        height:auto;
-        min-height:100vh;
-        padding:120px 20px 60px;
-        justify-content:center;
-        text-align:center;
-    }
-
-    .hero-content{
-        max-width:100%;
-    }
-
-    .hero h1{
-        font-size:42px;
-        line-height:1.2;
-    }
-
-    .hero p{
-        font-size:20px;
-    }
-
-    .hero-buttons{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    .btn,
-    .btn-secondary{
-        width:100%;
-        max-width:320px;
-        margin:10px 0;
-        text-align:center;
-    }
-
-    .cards{
-        grid-template-columns:1fr;
-    }
-
-    .gallery{
-        grid-template-columns:1fr;
-    }
-
-    .gallery img{
-        height:240px;
-    }
-
-    .section h2{
-        font-size:36px;
-    }
-
-    .section p{
-        font-size:18px;
-    }
-
-    iframe{
-        height:300px;
-    }
 }
