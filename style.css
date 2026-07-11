@@ -222,10 +222,115 @@ footer{
 
 @media(max-width:768px){
 
-    header .container{
-        flex-direction:column;
+    header{
+        background:rgba(0,0,0,.35);
+        backdrop-filter:blur(8px);
+        -webkit-backdrop-filter:blur(8px);
+        padding:10px 0;
     }
 
+    header .container{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .logo{
+        width:170px;
+        margin-bottom:12px;
+    }
+
+    nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:12px;
+        margin-top:5px;
+    }
+
+    nav a{
+        margin:0;
+        font-size:16px;
+        padding:6px 10px;
+    }
+
+    .hero{
+        height:100vh;
+        padding:170px 20px 70px;
+        justify-content:center;
+        text-align:center;
+    }
+
+    .hero-content{
+        max-width:100%;
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:42px;
+        line-height:1.15;
+        margin-bottom:18px;
+    }
+
+    .hero p{
+        font-size:20px;
+        line-height:1.5;
+        margin-bottom:25px;
+    }
+
+    .hero-buttons{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+    }
+
+    .btn,
+    .btn-secondary{
+        width:100%;
+        max-width:320px;
+        margin:0;
+        text-align:center;
+    }
+
+    .section{
+        padding:80px 0;
+    }
+
+    .section h2{
+        font-size:34px;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .card,
+    .card-servicio{
+        height:320px;
+    }
+
+    .gallery{
+        grid-template-columns:1fr;
+        gap:15px;
+    }
+
+    .gallery img{
+        height:250px;
+    }
+
+    iframe{
+        height:300px;
+    }
+
+    footer{
+        font-size:14px;
+        padding:18px;
+    }
+
+}
     nav{
         margin-top:20px;
     }
