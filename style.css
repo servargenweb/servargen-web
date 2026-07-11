@@ -330,7 +330,41 @@ footer{
     }
 
 }
-   
+   .menu-toggle{
+    display:none;
+    background:none;
+    border:none;
+    color:#f1c40f;
+    font-size:30px;
+    cursor:pointer;
+}
+
+@media(max-width:768px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    nav.menu{
+        display:none;
+        width:100%;
+        flex-direction:column;
+        text-align:center;
+        margin-top:10px;
+    }
+
+    nav.menu.active{
+        display:flex;
+    }
+
+    nav.menu a{
+        display:block;
+        padding:12px;
+        font-size:18px;
+        margin:0;
+    }
+
+}
 section{
     scroll-margin-top:140px;
 }
