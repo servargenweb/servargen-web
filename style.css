@@ -241,18 +241,33 @@ footer{
         margin-bottom:0;
     }
 
-    nav{
-        display:flex;
-        justify-content:flex-end;
-        align-items:center;
-        gap:8px;
-    }
+   .menu{
+    display:none;
+    flex-direction:column;
+    width:100%;
+    text-align:center;
+    margin-top:10px;
+}
 
-    nav a{
-        margin:0;
-        font-size:14px;
-        padding:4px 6px;
-    }
+.menu.active{
+    display:flex;
+}
+
+.menu a{
+    display:block;
+    padding:12px;
+    font-size:18px;
+    margin:0;
+}
+
+.menu-toggle{
+    display:block;
+    background:none;
+    border:none;
+    color:#f1c40f;
+    font-size:30px;
+    cursor:pointer;
+}
 
     .hero{
         height:100vh;
